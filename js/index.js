@@ -58,6 +58,11 @@ navItems[5].textContent = 'Contact';
 //CTA
 let ctaTitle = document.querySelector('h1');
 ctaTitle.textContent = siteContent.cta.h1;
+ctaTitle.style.width = '40%';
+ctaTitle.style.textAlign = 'center';
+ctaTitle.style.margin = '0 auto';
+
+ctaTitle.style.border = '2px solid grey';
 
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent.cta.button;
@@ -89,4 +94,21 @@ para[8].textContent = siteContent['footer'].copyright;
 let middleImg = document.querySelector('.middle-img');
 middleImg.src = siteContent['main-content']['middle-img-src'];
 
-//Contact
+//Change nav text color
+Array.from(navItems).forEach(navItem => {
+  navItem.style.color = 'green';
+});
+
+//New links for the nav
+
+const newLink = document.createElement('a');
+const newerLink = document.createElement('a');
+
+newLink.textContent = 'Home';
+newerLink.textContent = 'Logout';
+const newNav = document.querySelector('nav');
+
+newNav.prepend(newLink);
+newNav.append(newerLink);
+
+para[5].style.width = '20%';
