@@ -106,11 +106,21 @@ newLink.textContent = 'Home';
 newerLink.textContent = 'Logout';
 const newNav = document.querySelector('nav');
 
+//append and prepend
 newNav.prepend(newLink);
 newNav.append(newerLink);
 
 para[5].style.width = '20%';
 
 let body = document.querySelector('body');
-body.style.backgroundColor = '#79090f';
 body.style.color = 'white';
+
+const [red, green, blue] = [143, 26, 26];
+const page = document.querySelector('body');
+
+//on scroll event
+window.addEventListener('scroll', () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 150;
+  const [r, g, b] = [red / y, green / y, blue / y].map(Math.round);
+  page.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+});
