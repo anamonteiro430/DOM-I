@@ -62,8 +62,6 @@ ctaTitle.style.width = '40%';
 ctaTitle.style.textAlign = 'center';
 ctaTitle.style.margin = '0 auto';
 
-ctaTitle.style.border = '2px solid grey';
-
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent.cta.button;
 
@@ -112,3 +110,7 @@ newNav.prepend(newLink);
 newNav.append(newerLink);
 
 para[5].style.width = '20%';
+
+let body = document.querySelector('body');
+body.style.backgroundColor = '#79090f';
+body.style.color = 'white';
