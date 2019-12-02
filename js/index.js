@@ -56,7 +56,6 @@ navItems[4].textContent = 'About';
 navItems[5].textContent = 'Contact';
 
 //CTA
-
 let ctaTitle = document.querySelector('h1');
 ctaTitle.textContent = siteContent.cta.h1;
 
@@ -65,3 +64,28 @@ ctaButton.textContent = siteContent.cta.button;
 
 let ctaImg = document.getElementById('cta-img');
 ctaImg.src = siteContent['cta']['img-src'];
+
+//Main Content
+
+let subTitle = document.querySelectorAll('h4');
+subTitle[0].textContent = siteContent['main-content']['features-h4'];
+subTitle[1].textContent = siteContent['main-content']['about-h4'];
+subTitle[2].textContent = siteContent['main-content']['services-h4'];
+subTitle[3].textContent = siteContent['main-content']['product-h4'];
+subTitle[4].textContent = siteContent['main-content']['vision-h4'];
+subTitle[5].textContent = siteContent['contact']['contact-h4'];
+
+let para = document.querySelectorAll('p');
+para[0].textContent = siteContent['main-content']['features-content'];
+para[1].textContent = siteContent['main-content']['about-content'];
+para[2].textContent = siteContent['main-content']['services-content'];
+para[3].textContent = siteContent['main-content']['product-content'];
+para[4].textContent = siteContent['main-content']['vision-content'];
+para[5].textContent = siteContent['contact'].address;
+para[6].textContent = siteContent['contact'].phone;
+para[7].textContent = siteContent['contact'].email;
+
+let middleImg = document.querySelector('.middle-img');
+middleImg.src = siteContent['main-content']['middle-img-src'];
+
+//Contact
