@@ -59,6 +59,7 @@ navItems[5].textContent = 'Contact';
 let ctaTitle = document.querySelector('h1');
 ctaTitle.textContent = siteContent.cta.h1;
 ctaTitle.style.width = '40%';
+
 ctaTitle.style.textAlign = 'center';
 ctaTitle.style.margin = '0 auto';
 
